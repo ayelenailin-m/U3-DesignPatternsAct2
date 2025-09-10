@@ -1,12 +1,18 @@
 import runObserverDemo from "./observer/index";
 import runSingletonDemo from "./singleton";
 import runAdapterDemo from "./adapter/intex";
+import runFactoryDemo from "./factory";
 
-let lenea =
-  "______________________________________________________________________________________________\n";
+function log() {
+  console.log(
+    "______________________________________________________________________________________________\n"
+  );
+}
 
 runObserverDemo();
-console.log(lenea);
+log();
 runSingletonDemo();
-console.log(lenea);
+log();
+runFactoryDemo();
+log();
 runAdapterDemo();
