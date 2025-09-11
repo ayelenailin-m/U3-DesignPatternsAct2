@@ -1,8 +1,7 @@
-import { defaultMaxListeners } from "events";
 import { ConexionDB } from "./class/ConexionDB";
 
 export default function runSingletonDemo() {
-  console.log("=== SINGLETON: ConexionDB de Inventario ===\n");
+  console.log("=== SINGLETON: ConexionDB de Inventario ===");
 
   // Primera vez -> se crea con config
   const db1 = ConexionDB.getInstance({
